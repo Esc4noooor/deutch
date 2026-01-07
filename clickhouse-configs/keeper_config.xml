@@ -1,0 +1,16 @@
+<clickhouse-keeper>
+  <logger>
+    <level>trace</level>
+    <log>/var/log/clickhouse-keeper/clickhouse-keeper.log</log>
+    <errorlog>/var/log/clickhouse-keeper/clickhouse-keeper.err.log</errorlog>
+    <size>1000M</size>
+    <count>10</count>
+  </logger>
+  <raft_configuration>
+    <server>
+      <id>0</id>
+      <hostname>clickhouse-keeper-01</hostname>
+      <port>9444</port>
+    </server>
+  </raft_configuration>
+</clickhouse-keeper>
